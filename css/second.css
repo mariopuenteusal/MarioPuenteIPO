@@ -1,0 +1,428 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+body {
+  padding-top: 54px;
+}
+.background{
+    background-color:  #FBF2EF;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #F2F2F2;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+img{
+    display:block;
+    margin:auto;
+}
+.container{
+    
+    width: 94%;
+    margin:30px;
+
+}
+html {
+    color: #37000c;
+    /*font-size: 1em;*/
+    font-family: 'NasalizationRg-Regular';
+    font-weight:normal;
+    font-size: 12px;
+    background-color: #010101;
+}
+
+p,a {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px 0px 0px 20px;
+    color:#000000;
+    font-family: 'Alegreya', serif;
+}
+h2,h3{
+    padding: 10px 0px 0px 10px;
+    color: #B40404;
+    font-family: 'Orbitron', sans-serif;
+}
+/*colores generados a partir de imagen tomada de la serie*/
+.color1 { color: #061311}
+.color2 { color: #081511}
+.color3 { color: #1c231b}
+.color4 { color: #414f54}
+.color5 { color: #cfdbf2}
+.color6 { color: #93a7b6}
+.color7 { color: #9eb3e8}
+.color8 { color: #04110f}
+.color9 { color: #1b2522}
+.color10 { color: #08090a}
+.color11 { color: #2a5767}
+.color12 { color: #6d7c80}
+.color13 { color: #9d9d8b}
+.color14 { color: #4b5b61}
+.color15 { color: #021615}
+.color16 { color: #080a0c}
+.color17 { color: #090b0c}
+.color18 { color: #1e242b}
+.color19 { color: #315e6e}
+.color20 { color: #333e3f}
+.color21 { color: #192427}
+.color22 { color: #152222}
+.color23 { color: #050607}
+.color24 { color: #0f1610}
+.color25 { color: #cc9647}
+.color26 { color: #242b1f}
+.color27 { color: #152f38}
+.color28 { color: #172836}
+.color29 { color: #0a1a17}
+.color30 { color: #030506}
+.color31 { color: #15190e}
+.color32 { color: #182a38}
+.color33 { color: #050a0d}
+.color34 { color: #0e1930}
+.color35 { color: #0550c1}
+.color36 { color: #171b12}
+.color37 { color: #0c1814}
+.color38 { color: #030203}
+.color39 { color: #252f2d}
+.color40 { color: #151a19}
+.color41 { color: #5a93f2}
+.color42 { color: #050305}
+.color43 { color: #040305}
+.color44 { color: #0c120f}
+.color45 { color: #060c0c}
+.color46 { color: #475658}
+.color47 { color: #0e140f}
+.color48 { color: #060909}
+
+/*Estilos para la barra de menu para la segunda hoja de estilos*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #220000;
+    background-color: #220000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    margin:auto;
+    background: #220000;
+    color: #B40404;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+li a:hover {
+    background-color: #060909;
+}
+
+
+/*Fuente inspirada en la tipografía de la serie*/
+@font-face {
+font-family: 'NasalizationRg-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('NasalizationRg-Regular'), url('nasalization rg.woff') format('woff');
+}
+
+
+
+/*Para redondear la imagen de la portada*/
+#portada{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    border-top: 3px double #8c8b8b;
+     border-top: 1px solid #000400;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
